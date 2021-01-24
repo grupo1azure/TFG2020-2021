@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8"/>
+
+</head>
+<style>
+.table {
+  width: 75%;
+  
+  }
+.degradado{
+
+  background: linear-gradient(180deg, #006666 , white);
+  background-repeat: no-repeat;
+}
+
+</style>
+<!-- background-color:rgba(255,0,0, 0.4); -->
+<body class="degradado">
+<!-- Titulo #E4E4EE -->
+
+  <h1 style="color:#d5ff80"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;XSS Attack</h1><hr>
+
+<!-- Explicacion -->
+<table  align="center" class="table">
+  <tr>
+    <td>
+      <FONT SIZE=5><p><b style="color:#c4ff4d">Introducción:</b><p> Existen millones de páginas web, las hay de muchos tipos y para muchos propositos diferentes,
+	  hay algo que muchas tienen en común, que ofrecen un acceso tanto para usuarios como para el administrador de la misma. Para evadir este tipo de acceso existe un tipo de ataque
+	  llamado "Cross Site Scripting". Existen dos tipos de este mismo ataque pero nos vamos a centrar en el almacenado.
+	<p>	  
+	  
+      
+      <br><b style="color:#b3ff1a">Escenario:</b><p> Nos encontramos frente a una página web de tipo blog, en la que observamos varios post,
+	  un acceso para el administrador y un apartado con un formulario para escribir comentarios.<p>
+       <img src="imagenes/xss2.png" align="right" height="325" width="650"  style="border-radius: 20%;"><br/>
+
+      <b style="color:#99e600">Objetivo:</b><p> Ejecuta un ataque xss a partir de los siguientes pasos:
+	  <ol>
+        <li>Comprueba la vulnerabilidad de la página ante ataques xss.</li>
+		<li>Crea un página escrita en "php" para capturar el valor de una cookie.</li>
+        <li>Arranca un servidor "php" en tu equipo y monitoréalo.</li>
+		<li>Inyecta código javascript en el formulario de los comentarios para desviar el tráfico a tu servidor, con la página "php" que has creado.</li>
+		<li>Captura la cookie con el monitoreo de tu servidor.</li>
+		<li>Busca un programa para agregar la cookie a la página real, en tu propio navegador.</li>
+		
+      </ol>
+
+      <b style="color:#77b300">Consejos:</b><p>
+      <ol>
+        <li>Ten clara la mecánica del xss almacenado antes de realizar éste reto.</li>
+        <li>Comprueba bien el código en busca de errores de sintáxis o direcciones ip que te puedan ocasionar fallos a la hora de realizar el ataque.</li>
+		<li>Si necesitas descargar algún programa extra, hazlo.</li>
+		<li>Si sigues los objetivos uno a uno, con un poco de programación puedes resolver este reto.</li>
+      </ol>
+
+      <b style="color:#558000">Pistas:</b>
+      <ul>
+        <li>Si dedicas 5 min a buscar en internet este tipo de ataque puede que obtengas bastante información.</li>
+        
+      </ul>
+      
+      <b style="color:#334d00">Ultimo apunte:</b><br> <br>Disfruta del reto y recuerda que es educativo. Ésto solo demuestra lo 
+fácil que sería robar nuestros datos en una página web que no esté protegida contra este tipo de ataques.	
+<br><br>Descarga las máquina desde el siguiente enlace :<br>
+<a href="https://mega.nz/folder/Gvw0UagZ#w7NRWawbPqvFMFzqqAgcMQ"><h4 style="color:red;" align="center">Mega</h4></a>  
+</FONT>	  
+    </td>
+  </tr>
+  </table>
+</body>
+</html>
